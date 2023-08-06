@@ -13,6 +13,14 @@ public class MatrixGraph {
         matrix = new int[size][size];
     }
 
+    public ArrayList<Node> getNodes() {
+        return nodes;
+    }
+
+    public int[][] getMatrix() {
+        return matrix;
+    }
+
     public void addNode(Node node){
         nodes.add(node);
     }

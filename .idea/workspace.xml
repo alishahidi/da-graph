@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="add matrixGraph and listGraph">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="fix Graph Implementation Comparison on README">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691236068856</updated>
       <workItem from="1691236069924" duration="1796000" />
-      <workItem from="1691308901548" duration="2529000" />
+      <workItem from="1691308901548" duration="3608000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -84,7 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691312800311</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Graph Implementation Comparison to README">
+      <option name="closed" value="true" />
+      <created>1691313116983</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691313116983</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix Graph Implementation Comparison on README">
+      <option name="closed" value="true" />
+      <created>1691313217744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691313217744</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +110,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init commit" />
     <MESSAGE value="add matrixGraph and listGraph" />
-    <option name="LAST_COMMIT_MESSAGE" value="add matrixGraph and listGraph" />
+    <MESSAGE value="add Graph Implementation Comparison to README" />
+    <MESSAGE value="fix Graph Implementation Comparison on README" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Graph Implementation Comparison on README" />
   </component>
 </project>
