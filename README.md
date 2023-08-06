@@ -28,11 +28,10 @@ The MatrixGraph implementation uses an adjacency matrix to represent the graph. 
 
 This table compares the ListGraph and MatrixGraph implementations, along with their respective time complexities (in Big O notation) for various operations.
 
-| Graph Implementation | Adding Nodes (Best Case) | Adding Nodes (Average Case) | Adding Nodes (Worst Case) | Adding Edges (Best Case) | Adding Edges (Average Case) | Adding Edges (Worst Case) | Checking Edge (Best Case) | Checking Edge (Average Case) | Checking Edge (Worst Case) |
-|---------------------|--------------------------|----------------------------|---------------------------|--------------------------|----------------------------|---------------------------|--------------------------|----------------------------|---------------------------|
-| ListGraph           | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(n)                       | O(n)                      |
-| MatrixGraph         | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(1)                       | O(1)                      |
-
+| Graph Implementation | Adding Nodes (Time Complexity) | Adding Edges (Time Complexity) | Checking Edge (Time Complexity) | Space Complexity |
+|---------------------|-------------------------------|-------------------------------|--------------------------------|------------------|
+| ListGraph           | O(1)                          | O(1)                          | O(V)                           | O(V + E)         |
+| MatrixGraph         | O(1)                          | O(1)                          | O(1)                           | O(V^2)           |
 ### Example Code:
 
 ```java
