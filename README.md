@@ -26,11 +26,20 @@ To use the graph and graph search algorithms, follow these steps:
 ```java
 import org.alishahidi.graph.Node;
 import org.alishahidi.graph.matrix.MatrixGraph;
+import org.alishahidi.graph.list.ListGraph;
 import org.alishahidi.search.DepthFirstSearch;
 import org.alishahidi.search.BreadthFirstSearch;
 
 public class Main {
     public static void main(String[] args) {
+        ListGraph listGraph = new ListGraph();
+        listGraph.addNode(new Node('A'));
+        listGraph.addNode(new Node('B'));
+        listGraph.addNode(new Node('C'));
+        listGraph.addEdge(0, 1);
+        listGraph.addEdge(1, 2);
+        listGraph.print();
+        
         MatrixGraph graph = new MatrixGraph(5);
 
         graph.addNode(new Node('A'));
