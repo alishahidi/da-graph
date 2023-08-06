@@ -12,6 +12,10 @@ public class ListGraph {
         alist = new ArrayList<>();
     }
 
+    public ArrayList<LinkedList<Node>> getAlist() {
+        return alist;
+    }
+
     public void addNode(Node node) {
         LinkedList<Node> currentList = new LinkedList<>();
         currentList.add(node);
