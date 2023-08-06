@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="add getter for listGraph">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="convert version to 1.1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alishahidi/search/BreadthFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alishahidi/search/DepthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alishahidi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alishahidi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.alishahidi.search" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +75,9 @@
       <updated>1691236068856</updated>
       <workItem from="1691236069924" duration="1796000" />
       <workItem from="1691308901548" duration="3608000" />
-      <workItem from="1691315465876" duration="99000" />
+      <workItem from="1691315465876" duration="152000" />
+      <workItem from="1691315832939" duration="89000" />
+      <workItem from="1691328731275" duration="912000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -117,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691315553861</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="convert version to 1.1">
+      <option name="closed" value="true" />
+      <created>1691315575490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691315575490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +149,7 @@
     <MESSAGE value="fix Graph Implementation Comparison on README" />
     <MESSAGE value="add getter for matixGraph" />
     <MESSAGE value="add getter for listGraph" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getter for listGraph" />
+    <MESSAGE value="convert version to 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert version to 1.1" />
   </component>
 </project>

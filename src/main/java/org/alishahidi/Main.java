@@ -3,6 +3,8 @@ package org.alishahidi;
 import org.alishahidi.graph.list.ListGraph;
 import org.alishahidi.graph.matrix.MatrixGraph;
 import org.alishahidi.graph.Node;
+import org.alishahidi.search.BreadthFirstSearch;
+import org.alishahidi.search.DepthFirstSearch;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +24,12 @@ public class Main {
         matrixGraph.addEdge(4, 2);
 
         matrixGraph.print();
+
+        DepthFirstSearch dfs = new DepthFirstSearch(matrixGraph);
+        dfs.search(0);
+
+        BreadthFirstSearch bfs = new BreadthFirstSearch(matrixGraph);
+        bfs.search(0);
 
         ListGraph listGraph = new ListGraph();
 
