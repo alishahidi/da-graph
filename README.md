@@ -24,15 +24,14 @@ The MatrixGraph implementation uses an adjacency matrix to represent the graph. 
 - `checkEdge(int src, int dest)`: Checks if there is an edge between two nodes specified by their indices in the nodes list.
 - `print()`: Prints the adjacency matrix representation of the graph, showing the nodes and their connections.
 
-## How to Use
+## Graph Implementation Comparison
 
-To use this project, you can follow these steps:
+This table compares the ListGraph and MatrixGraph implementations, along with their respective time complexities (in Big O notation) for various operations.
 
-1. Download or clone the project to your local machine.
-2. Import the project into your preferred Java IDE (e.g., IntelliJ, Eclipse).
-3. Create instances of ListGraph and MatrixGraph.
-4. Add nodes and edges using the `addNode` and `addEdge` methods.
-5. Print the graph using the `print` method.
+| Graph Implementation | Adding Nodes (Best Case) | Adding Nodes (Average Case) | Adding Nodes (Worst Case) | Adding Edges (Best Case) | Adding Edges (Average Case) | Adding Edges (Worst Case) | Checking Edge (Best Case) | Checking Edge (Average Case) | Checking Edge (Worst Case) |
+|---------------------|--------------------------|----------------------------|---------------------------|--------------------------|----------------------------|---------------------------|--------------------------|----------------------------|---------------------------|
+| ListGraph           | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(n)                       | O(n)                      |
+| MatrixGraph         | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(1)                       | O(1)                      | O(1)                     | O(1)                       | O(1)                      |
 
 ### Example Code:
 
