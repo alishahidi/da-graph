@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="add graph searches inside this repo">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="ignore .idea folder">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1691308901548" duration="3608000" />
       <workItem from="1691315465876" duration="152000" />
       <workItem from="1691315832939" duration="89000" />
-      <workItem from="1691328731275" duration="1002000" />
+      <workItem from="1691328731275" duration="1312000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -158,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691329691542</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ignore .idea folder">
+      <option name="closed" value="true" />
+      <created>1691329749046</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691329749046</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +180,7 @@
     <MESSAGE value="add getter for listGraph" />
     <MESSAGE value="convert version to 1.1" />
     <MESSAGE value="add graph searches inside this repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add graph searches inside this repo" />
+    <MESSAGE value="ignore .idea folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore .idea folder" />
   </component>
 </project>

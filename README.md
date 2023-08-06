@@ -1,28 +1,99 @@
-# Graph Project with ListGraph and MatrixGraph
+# Graph Project
 
-This project represents a graph using two different implementations: ListGraph and MatrixGraph. Each implementation provides methods for adding nodes, adding edges, and checking if an edge exists between two nodes.
+## Introduction
+This project provides a graph data structure implementation along with two graph search algorithms - Depth-First Search (DFS) and Breadth-First Search (BFS).
 
-## ListGraph (org.alishahidi.graph.list.ListGraph)
+## Graph Representation
+The graph representation in this project includes the following components:
+- `org.alishahidi.graph.matrix.MatrixGraph`: A matrix-based graph representation.
 
-The ListGraph implementation uses an adjacency list to represent the graph. It utilizes an ArrayList of LinkedLists to store the nodes and their connections.
+## Depth-First Search (DFS) Algorithm
+The DFS algorithm is a popular graph traversal algorithm that explores as far as possible along each branch before backtracking. The project includes the following components for DFS:
+- `org.alishahidi.search.DepthFirstSearch`: An implementation of the Depth-First Search algorithm.
 
-### Methods:
+## Breadth-First Search (BFS) Algorithm
+The BFS algorithm is another graph traversal algorithm that explores all the vertices of a graph in breadth-first order. The project includes the following components for BFS:
+- `org.alishahidi.search.BreadthFirstSearch`: An implementation of the Breadth-First Search algorithm.
 
-- `addNode(Node node)`: Adds a node to the graph.
-- `addEdge(int src, int dest)`: Adds an edge between two nodes specified by their indices in the nodes list.
-- `checkEdge(int src, int dest)`: Checks if there is an edge between two nodes specified by their indices in the nodes list.
-- `print()`: Prints the adjacency list representation of the graph, showing the nodes and their connections.
+## Usage
+To use the graph and graph search algorithms, follow these steps:
 
-## MatrixGraph (org.alishahidi.graph.matrix.MatrixGraph)
+1. Create an instance of `org.alishahidi.graph.matrix.MatrixGraph`.
+2. Add nodes to the graph using the `addNode` method.
+3. Add edges between nodes using the `addEdge` method.
+4. Use the `org.alishahidi.search.DepthFirstSearch` or `org.alishahidi.search.BreadthFirstSearch` class to perform graph search.
 
-The MatrixGraph implementation uses an adjacency matrix to represent the graph. It uses a 2D array to store the edges between nodes.
+```java
+import org.alishahidi.graph.Node;
+import org.alishahidi.graph.matrix.MatrixGraph;
+import org.alishahidi.search.DepthFirstSearch;
+import org.alishahidi.search.BreadthFirstSearch;
 
-### Methods:
+public class Main {
+    public static void main(String[] args) {
+        MatrixGraph graph = new MatrixGraph(5);
 
-- `addNode(Node node)`: Adds a node to the graph.
-- `addEdge(int src, int dest)`: Adds an edge between two nodes specified by their indices in the nodes list.
-- `checkEdge(int src, int dest)`: Checks if there is an edge between two nodes specified by their indices in the nodes list.
-- `print()`: Prints the adjacency matrix representation of the graph, showing the nodes and their connections.
+        graph.addNode(new Node('A'));
+        graph.addNode(new Node('B'));
+        graph.addNode(new Node('C'));
+        graph.addNode(new Node('D'));
+        graph.addNode(new Node('E'));
+
+        graph.addEdge(0, 1);
+        graph.addEdge(1, 2);
+        graph.addEdge(2, 3);
+        graph.addEdge(2, 4);
+        graph.addEdge(4, 0);
+        graph.addEdge(4, 2);
+
+        graph.print();
+
+        // Perform Depth-First Search
+        DepthFirstSearch dfs = new DepthFirstSearch(graph);
+        dfs.search(0);
+
+        // Perform Breadth-First Search
+        BreadthFirstSearch bfs = new BreadthFirstSearch(graph);
+        bfs.search(0);
+    }
+}
+```
+
+# Outputs
+
+## ListGraph:
+```text
+A ->
+B -> A ->
+C -> B ->
+```
+
+## MatrixGraph:
+```text
+% A B C
+A 0 1 0
+B 0 0 1
+C 0 0 0
+```
+
+## Depth-First Search
+```text
+A = visited
+B = visited
+C = visited
+D = visited
+E = visited
+```
+
+## Breadth-First Search
+
+```text
+A = visited
+B = visited
+C = visited
+D = visited
+E = visited
+```
 
 ## Graph Implementation Comparison
 
@@ -32,55 +103,20 @@ This table compares the ListGraph and MatrixGraph implementations, along with th
 |---------------------|-------------------------------|-------------------------------|--------------------------------|------------------|
 | ListGraph           | O(1)                          | O(1)                          | O(V)                           | O(V + E)         |
 | MatrixGraph         | O(1)                          | O(1)                          | O(1)                           | O(V^2)           |
-### Example Code:
 
-```java
-package org.alishahidi;
+## Graph Search Algorithms Comparison
 
-import org.alishahidi.graph.Node;
-import org.alishahidi.graph.list.ListGraph;
-import org.alishahidi.graph.matrix.MatrixGraph;
+This table compares two graph search algorithms - Depth-First Search (DFS) and Breadth-First Search (BFS) - based on their time and space complexities.
 
-public class Main {
-    public static void main(String[] args) {
-        // Example using ListGraph
-        ListGraph listGraph = new ListGraph();
-        listGraph.addNode(new Node('A'));
-        listGraph.addNode(new Node('B'));
-        listGraph.addNode(new Node('C'));
-        listGraph.addEdge(0, 1);
-        listGraph.addEdge(1, 2);
-        listGraph.print();
+| Algorithm         | Description                                   | Time Complexity (Average Case) | Time Complexity (Worst Case) | Space Complexity | 
+|-------------------|-----------------------------------------------|--------------------------------|-----------------------------|------------------|
+| Depth-First Search (DFS) | Explores as far as possible along each branch before backtracking. | O(V + E)                        | O(V + E)                      | O(V)               |
+| Breadth-First Search (BFS) | Explores all vertices in breadth-first order. | O(V + E)                        | O(V + E)                      | O(V)               |
 
-        // Example using MatrixGraph
-        MatrixGraph matrixGraph = new MatrixGraph(3);
-        matrixGraph.addNode(new Node('A'));
-        matrixGraph.addNode(new Node('B'));
-        matrixGraph.addNode(new Node('C'));
-        matrixGraph.addEdge(0, 1);
-        matrixGraph.addEdge(1, 2);
-        matrixGraph.print();
-    }
-}
-```
-# Outputs
+- V: Number of vertices in the graph.
+- E: Number of edges in the graph.
 
-## ListGraph:
-
-```text
-A ->
-B -> A ->
-C -> B ->
-```
-
-## MatrixGraph:
-
-```text
-% A B C
-A 0 1 0
-B 0 0 1
-C 0 0 0
-```
+The table provides a quick overview of the time and space complexities of both DFS and BFS algorithms. These complexities are useful for understanding the efficiency of the algorithms in different scenarios. Please note that the complexities mentioned here are for the algorithms alone and do not include the complexity of constructing the graph or any other additional operations outside the search algorithms.
 
 ## License
 
