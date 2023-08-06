@@ -1,12 +1,14 @@
-package org.alishahidi;
+package org.alishahidi.graph.matrix;
+
+import org.alishahidi.graph.Node;
 
 import java.util.ArrayList;
 
-public class Graph {
+public class MatrixGraph {
     ArrayList<Node> nodes;
     private final int [][] matrix;
 
-    public Graph(int size){
+    public MatrixGraph(int size){
         nodes = new ArrayList<>();
         matrix = new int[size][size];
     }
@@ -26,7 +28,7 @@ public class Graph {
     public void print(){
         System.out.print("% ");
         for(Node node: nodes){
-            System.out.print(node.data + " ");
+            System.out.print(node.getNode() + " ");
         }
         System.out.println();
         for (int i = 0; i < matrix.length; i++) {

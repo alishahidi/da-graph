@@ -1,66 +1,88 @@
-# Adjacency Matrix Graph Project
+# Graph Project with ListGraph and MatrixGraph
 
-This project represents a graph using an adjacency matrix. It includes three classes: `Node`, `Graph`, and `Main`.
+This project represents a graph using two different implementations: ListGraph and MatrixGraph. Each implementation provides methods for adding nodes, adding edges, and checking if an edge exists between two nodes.
 
-## Node.java
+## ListGraph (org.alishahidi.graph.list.ListGraph)
 
-The `Node` class represents a node in the graph. Each node has a character data to identify it.
-
-## Graph.java
-
-The `Graph` class represents the graph using an adjacency matrix. It supports adding nodes, adding edges, and checking if an edge exists between two nodes.
+The ListGraph implementation uses an adjacency list to represent the graph. It utilizes an ArrayList of LinkedLists to store the nodes and their connections.
 
 ### Methods:
 
 - `addNode(Node node)`: Adds a node to the graph.
 - `addEdge(int src, int dest)`: Adds an edge between two nodes specified by their indices in the nodes list.
 - `checkEdge(int src, int dest)`: Checks if there is an edge between two nodes specified by their indices in the nodes list.
-- `print()`: Prints the adjacency matrix of the graph, showing the nodes and their connections.
+- `print()`: Prints the adjacency list representation of the graph, showing the nodes and their connections.
 
-## Main.java
+## MatrixGraph (org.alishahidi.graph.matrix.MatrixGraph)
 
-The `Main` class serves as the entry point of the program. It creates a sample graph, adds nodes, and creates edges between nodes. Then, it prints the adjacency matrix of the graph and checks if there is an edge between two nodes.
+The MatrixGraph implementation uses an adjacency matrix to represent the graph. It uses a 2D array to store the edges between nodes.
+
+### Methods:
+
+- `addNode(Node node)`: Adds a node to the graph.
+- `addEdge(int src, int dest)`: Adds an edge between two nodes specified by their indices in the nodes list.
+- `checkEdge(int src, int dest)`: Checks if there is an edge between two nodes specified by their indices in the nodes list.
+- `print()`: Prints the adjacency matrix representation of the graph, showing the nodes and their connections.
 
 ## How to Use
+
+To use this project, you can follow these steps:
+
+1. Download or clone the project to your local machine.
+2. Import the project into your preferred Java IDE (e.g., IntelliJ, Eclipse).
+3. Create instances of ListGraph and MatrixGraph.
+4. Add nodes and edges using the `addNode` and `addEdge` methods.
+5. Print the graph using the `print` method.
 
 ### Example Code:
 
 ```java
 package org.alishahidi;
 
+import org.alishahidi.graph.Node;
+import org.alishahidi.graph.list.ListGraph;
+import org.alishahidi.graph.matrix.MatrixGraph;
+
 public class Main {
     public static void main(String[] args) {
-        Graph graph = new Graph(5);
+        // Example using ListGraph
+        ListGraph listGraph = new ListGraph();
+        listGraph.addNode(new Node('A'));
+        listGraph.addNode(new Node('B'));
+        listGraph.addNode(new Node('C'));
+        listGraph.addEdge(0, 1);
+        listGraph.addEdge(1, 2);
+        listGraph.print();
 
-        graph.addNode(new Node('A'));
-        graph.addNode(new Node('B'));
-        graph.addNode(new Node('C'));
-        graph.addNode(new Node('D'));
-        graph.addNode(new Node('E'));
-
-        graph.addEdge(0, 1);
-        graph.addEdge(1, 2);
-        graph.addEdge(2, 3);
-        graph.addEdge(2, 4);
-        graph.addEdge(4, 0);
-        graph.addEdge(4, 2);
-
-        graph.print();
-        System.out.println(graph.checkEdge(0, 1));
+        // Example using MatrixGraph
+        MatrixGraph matrixGraph = new MatrixGraph(3);
+        matrixGraph.addNode(new Node('A'));
+        matrixGraph.addNode(new Node('B'));
+        matrixGraph.addNode(new Node('C'));
+        matrixGraph.addEdge(0, 1);
+        matrixGraph.addEdge(1, 2);
+        matrixGraph.print();
     }
 }
 ```
-### Output:
+# Outputs
 
-|   | A | B | C | D | E |
-|---|---|---|---|---|---|
-| A | 0 | 1 | 0 | 0 | 1 |
-| B | 0 | 0 | 1 | 0 | 0 |
-| C | 0 | 0 | 0 | 1 | 1 |
-| D | 0 | 0 | 0 | 0 | 0 |
-| E | 1 | 0 | 1 | 0 | 0 |
+## ListGraph:
 
-*true*
+```text
+A ->
+B -> A ->
+C -> B ->
+```
+
+## MatrixGraph:
+
+```text
+% A B C
+A 0 1 0
+B 0 0 1
+C 0 0 0
+```
 
 ## License
 

@@ -1,4 +1,4 @@
-package org.alishahidi;
+package org.alishahidi.graph;
 
 public class Node {
     char data;
