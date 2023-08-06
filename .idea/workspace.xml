@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="add getter for matixGraph">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alishahidi/graph/list/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alishahidi/graph/list/ListGraph.java" afterDir="false" />
+    <list default="true" id="07ddeddb-be74-4cac-a352-9f48708b7a95" name="Changes" comment="add getter for listGraph">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <updated>1691236068856</updated>
       <workItem from="1691236069924" duration="1796000" />
       <workItem from="1691308901548" duration="3608000" />
-      <workItem from="1691315465876" duration="75000" />
+      <workItem from="1691315465876" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -109,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691315529697</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add getter for listGraph">
+      <option name="closed" value="true" />
+      <created>1691315553861</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691315553861</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +130,7 @@
     <MESSAGE value="add Graph Implementation Comparison to README" />
     <MESSAGE value="fix Graph Implementation Comparison on README" />
     <MESSAGE value="add getter for matixGraph" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getter for matixGraph" />
+    <MESSAGE value="add getter for listGraph" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getter for listGraph" />
   </component>
 </project>
